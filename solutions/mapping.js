@@ -6,18 +6,26 @@ export const subArray = (array,indexes) => {
     return result;
 }
 export const getRepeats = (array) => {
-    var result = []
+    var tempResult = []
     var tempArray = []
-    tempArray.push(array.at(0))//gives a double virst value
+    var result = []
+    //tempArray.push(array.at(0))//gives a double virst value
     array.forEach(val => {
-        if(tempArray.includes(val) && !result.includes(val)){
-            result.push(val)
+        
+        if(tempArray.includes(val) && !tempResult.includes(val)){
+            tempResult.push(val)
         }
         else{
-         tempArray.push(val)
+            tempArray.push(val)
+        }
+    });
+    array.forEach(val =>{
+        if(tempResult.includes(val) && !result.includes(val)){
+            result.push(val)
         }
     });
     return result;
 }
+//takes in a 2d array of people and fields and returns who is over 21
 export const over21 = (array) => array
 export const makeHtmlList = (array) => array
