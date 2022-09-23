@@ -1,5 +1,3 @@
-import { listSquares } from "./warmup";
-
 export const subArray = (array,indexes) => {
     let result = []
     indexes.forEach(val => {
