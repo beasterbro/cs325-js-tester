@@ -1,14 +1,14 @@
 export const subArray = (array,indexes) => {
-    var result = []
+    let result = []
     indexes.forEach(val => {
         result.push(array.at(val))
     });
     return result;
 }
 export const getRepeats = (array) => {
-    var tempResult = []
-    var tempArray = []
-    var result = []
+    let tempResult = []
+    let tempArray = []
+    let result = []
     //tempArray.push(array.at(0))//gives a double virst value
     array.forEach(val => {
         
