@@ -26,6 +26,6 @@ export const getRepeats = (array) => {
     });
     return result;
 }
-//takes in a 2d array of people and fields and returns who is over 21
-export const over21 = (array) => array
+//takes in a  array of objects with fields and returns who is over 21
+export const over21 = (array) => array.filter(person => person.age >= 21)
 export const makeHtmlList = (array) => array
