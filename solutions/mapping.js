@@ -28,7 +28,7 @@ export const getRepeats = (array) => {
 }
 //takes in a  array of objects with fields and returns who is over 21
 export const over21 = (array) => array.filter(person => person.age >= 21)
-export const makeHtmlList = (array) => {
+/*export const makeHtmlList = (array) => {
     var resultList = document.createElement("li");
     for(let i of array){
     let li = document.createElement("li");
@@ -36,4 +36,4 @@ export const makeHtmlList = (array) => {
     resultList.appendChild(li);
     }
     return resultList;
-}
+}*/
