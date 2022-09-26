@@ -8,7 +8,7 @@ export const over21 = (array) => array.filter(person => person.age >= 21)
 
 export const makeHtmlList = (array) => {
     var resultList = document.createElement("ul");//creating outer unordered list
-    resultList.innerHTML = array.map( ele => "<li>" + ele + "</li>").join('')
+    resultList.innerHTML = array.map( ele => "<li>" + ele + "</li>").join('')//using strings instead of create document
 
     return resultList.innerHTML == '' ? resultList.innerHTML : resultList.outerHTML//ternary for the case where the given list is blank
 }
