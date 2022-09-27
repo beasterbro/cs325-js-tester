@@ -7,9 +7,7 @@ export const getRepeats = (array) => array.filter( (val, ind) =>
 //takes in a  array of objects with fields and returns who is over 21
 export const over21 = (array) => array.filter(person => person.age >= 21)
 
+//Converts a given aray into an HTML list
 export const makeHtmlList = (array) => {
-    var resultList = ""//resultList now a string instead of using createElement
-    resultList = "<ul><li>" + array.join('</li><li>') + "</li></ul>" //using strings instead of createElement
-
-    return resultList == "<ul><li></li></ul>" ? '' : resultList//ternary for the case where the given list is blank
+  return array == "" ? "" : "<ul><li>" + array.join('</li><li>') + "</li></ul>" 
 }
